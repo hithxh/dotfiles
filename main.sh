@@ -1,4 +1,8 @@
 #!/bin/bash
+ln -sf ~/dotfiles/zshrc ~/.zshrc
+ln -sf ~/dotfiles/bashrc ~/.bashrc
+ln -sf ~/dotfiles/gitconfig ~/.gitconfig
+
 
 print_in_purple "\n • Setup MacOS\n\n"
 ./macos.sh
