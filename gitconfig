@@ -1,0 +1,2 @@
+[alias]
+	a = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
