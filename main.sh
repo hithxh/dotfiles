@@ -1,11 +1,12 @@
 #!/bin/bash
-ln -sf ~/dotfiles/zshrc ~/.zshrc
-ln -sf ~/dotfiles/bashrc ~/.bashrc
-ln -sf ~/dotfiles/gitconfig ~/.gitconfig
 
+sudo -v
 
-print_in_purple "\n • Setup MacOS\n\n"
+echo "Setting up dotfiles..."
+./dotfiles.sh
+
+echo "Configuring macOS settings..."
 ./macos.sh
 
-print_in_purple "\n • Brew\n\n"
+echo "Installing Homebrew packages..."
 ./brew.sh
