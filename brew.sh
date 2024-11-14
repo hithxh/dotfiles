@@ -16,6 +16,7 @@ brew upgrade
 # Install packages
 apps=(
     git
+    yt-dlp
 )
 
 brew install "${apps[@]}"
